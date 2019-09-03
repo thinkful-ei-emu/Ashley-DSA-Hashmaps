@@ -70,22 +70,27 @@ function removeDuplicates(str) {
 }
 
 function palindromeChecker(str) {
+
+  //need to find a way to increase 
+  //count to check that there are pairs and one single letter
   let palMap = new HashMap();
   let count = 0;
   for (let i = 0; i < str.length; i++) {
     palMap.set(str[i], count);
    
+   
 
   } 
-    
-      
-
-  
-
-
+ 
   console.log(palMap)
 
  
+}
+
+function anagrams(arr) {
+console.log(arr);
+
+
 }
 
 function main() {
@@ -113,6 +118,7 @@ function main() {
   //then multiply capacity(8) by the size_ratio (3) which gives you 24
   // console.log(removeDuplicates('google'));
   console.log(palindromeChecker('racecar'));
+  //  console.log(anagrams(['east', 'cars']))
 }
 
 main();
